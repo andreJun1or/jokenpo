@@ -1,0 +1,10 @@
+{
+  "name": "jokenpo",
+  "version": "0.0.0",
+  "description": "Jogo jokenpô simples",
+  "main": "index.html",
+  "repository": "git@github.com:andreJun1or/jokenpo.git",
+  "author": "<andreJun1or>",
+  "license": "MIT",
+  "private": false
+}
