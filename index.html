@@ -13,20 +13,14 @@
   </header>
   <main class="container">
     <div>
-      <ul class="container__score-list">
-        <li>Player: 0</li>
-        <li>Computer: 0</li>
-      </ul>
-    </div>
-    <div>
       <ul class="container__options">
-        <li><button class="container__button">&#x270A;</button></li>
-        <li><button class="container__button">&#x1F590;</button></li>
-        <li><button class="container__button">&#x270C;</button></li>
+        <li><button class="container__button select" id="pedra">&#x270A;</button></li>
+        <li><button class="container__button papel select" id="papel">&#x1F590;</button></li>
+        <li><button class="container__button select" id="tesoura">&#x270C;</button></li>
       </ul>
     </div>
     <div class="container__results">
-      <p>Jogador escolheu pedra. Computador escolheu papel. Computador venceu! &#x1F973;&#x1F973;&#x1F973;</p>
+      <p id="gameResult"></p>
     </div>
   </main>
   <script src="./js/main.js"></script>
