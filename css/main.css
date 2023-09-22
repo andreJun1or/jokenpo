@@ -24,6 +24,12 @@ body {
   margin: 0 var(--margin);
 }
 
+.container__score-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
 .container__options {
   list-style: none;
   margin-bottom: var(--margin);

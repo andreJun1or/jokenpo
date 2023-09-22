@@ -2,8 +2,13 @@ const $select = document.querySelectorAll('.select');
 
 $select.forEach(select => { select.addEventListener('click', startGame); });
 
+let playerScore = 0,
+cpuScore = 0;
+
 function startGame(event) {
-  const $gameResult = document.querySelector('#gameResult');
+  const $gameResult = document.querySelector('#gameResult'),
+  $playerScoreDisplay = document.querySelector('#container__player-score'),
+  $cpuScoreDisplay = document.querySelector('#container__computer-score');
   
   const playerOption = setPlayerOption(event);
   const computerOption = setComputerOption();
@@ -13,17 +18,25 @@ function startGame(event) {
     return;
   }
   if(playerOption === 'pedra' && computerOption === 'tesoura') {
+    playerScore++
+    $playerScoreDisplay.innerText = playerScore;
     $gameResult.innerHTML = `Jogador escolheu ${playerOption}, o computador escolheu ${computerOption}. Jogador venceu! &#x1F973;&#x1F973;&#x1F973;`;
     return;
   }
   if(playerOption === 'tesoura' && computerOption === 'papel') {
+    playerScore++
+    $playerScoreDisplay.innerText = playerScore;
     $gameResult.innerHTML = `Jogador escolheu ${playerOption}, o computador escolheu ${computerOption}. Jogador venceu! &#x1F973;&#x1F973;&#x1F973;`;
     return;
   }
   if(playerOption === 'papel' && computerOption === 'pedra') {
+    playerScore++
+    $playerScoreDisplay.innerText = playerScore;
     $gameResult.innerHTML = `Jogador escolheu ${playerOption}, o computador escolheu ${computerOption}. Jogador venceu! &#x1F973;&#x1F973;&#x1F973;`;
     return;
   }
+  cpuScore++;
+  $cpuScoreDisplay.innerText = cpuScore;
   $gameResult.innerHTML = `Jogador escolheu ${playerOption}, o computador escolheu ${computerOption}. Computador venceu! &#x1F973;&#x1F973;&#x1F973;`;
 }
   
