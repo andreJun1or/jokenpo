@@ -1,6 +1,6 @@
 {
   "name": "jokenpo",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Jogo jokenpô simples",
   "main": "index.html",
   "repository": "git@github.com:andreJun1or/jokenpo.git",
